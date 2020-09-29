@@ -40,8 +40,12 @@ button.addEventListener('click', () => {
 
     alert(`${userName} We are finished here. Procede to see your results.`);
 
-    testResults.textContent = `${userName}, you answered ${correctAnswers} right out of ${numQuestions}`;
+    testResults.textContent = `${userName}, you answered ${correctAnswers} correctly out of ${numQuestions} questions.`;
+
+    if (correctAnswers <= 2) {
+        testResults.style.backgroundImage = 
+    }
 });
 // initialize state
-
+// class hidden if score is 4 out of 4 then display
 // set event listeners to update state and DOM
